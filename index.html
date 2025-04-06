@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Department of Agriculture</title>
+    <link rel="stylesheet" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-sans text-[#333] bg-white">
-    <header class="bg-white shadow-md">
+    <header id="head" class="bg-white shadow-md fixed w-full z-10">
       <div
         class="flex justify-center items-center py-1 text-[8px] bg-[#2e7d32]"
       >
         <nav class="flex items-center space-x-6 text-white">
-          <h1>Logo</h1>
+          <a href="#head"
+            ><img src="./assets/logo.jpg" width="30px" alt=""
+          /></a>
           <span
             >Telephone
             <div>+94 812 388 331 /32/ 34</div></span
@@ -29,10 +32,10 @@
       </div>
       <div class="max-w-7xl mx-auto px-4 py-1 flex justify-center items-center">
         <nav class="flex items-center space-x-6">
-          <a href="#" class="text-[#2e7d32] hover:underline">Home</a>
-          <a href="#" class="text-[#2e7d32] hover:underline">About</a>
-          <a href="#" class="text-[#2e7d32] hover:underline">Services</a>
-          <a href="#" class="text-[#2e7d32] hover:underline">Contact</a>
+          <a href="#hero" class="text-[#2e7d32] hover:underline">Home</a>
+          <a href="#about" class="text-[#2e7d32] hover:underline">About</a>
+          <a href="#service" class="text-[#2e7d32] hover:underline">Services</a>
+          <a href="#contact" class="text-[#2e7d32] hover:underline">Contact</a>
           <input
             type="text"
             placeholder="Search..."
@@ -54,10 +57,11 @@
     </header>
 
     <section
+      id="hero"
       class="bg-cover bg-center bg-no-repeat py-20 text-center"
       style="background-image: url('./assets/top.jpg')"
     >
-      <div class="bg-black bg-opacity-30 py-16 px-4">
+      <div class="bg-black bg-opacity-30 mt-14 py-8 px-4">
         <div class="max-w-3xl mx-auto">
           <h2 class="text-4xl font-bold text-white mb-4">
             Welcome to the Department of Agriculture
@@ -234,7 +238,7 @@
       </div>
     </section>
 
-    <section class="py-16 bg-white">
+    <section id="service" class="py-16 bg-white">
       <div class="flex justify-center items-center">
         <div class="max-w-7xl mx-auto mt-[-2rem] px-4 text-center">
           <h3 class="text-3xl font-semibold mb-10 text-[#2e7d32]">
@@ -287,7 +291,7 @@
         </div>
       </div>
     </section>
-    <section class="py-16 bg-green-50">
+    <section id="about" class="py-16 bg-green-50">
       <div
         class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8"
       >
@@ -308,7 +312,7 @@
       </div>
     </section>
 
-    <footer class="bg-[#1b5e20] text-white py-8">
+    <footer id="contact" class="bg-[#1b5e20] text-white py-8">
       <div
         class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left"
       >
@@ -328,5 +332,8 @@
         </div>
       </div>
     </footer>
+    <div class="bg-[#fff] text-[#1b5e20] text-center py-2">
+      <p>Copyright &copy; 2025 MyWebsite. All rights reserved.</p>
+    </div>
   </body>
 </html>

@@ -13,6 +13,8 @@
   width: 500%;
   height: 100%;
   transition: all 0.5s ease-in-out;
+  background-attachment: ;
+  background: linear-gradient();
 }
 
 .slides input {
@@ -56,4 +58,17 @@
 
 #radio3:checked ~ .first {
   margin-left: -200%;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
 }
